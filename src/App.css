@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+
+
+.main{
+    height: 100vh;
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 14px,rgba(0,0,0,0.04) 14px, rgba(0,0,0,0.04) 15px,transparent 15px, transparent 29px,rgba(0,0,0,0.04) 29px, rgba(0,0,0,0.04) 42px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 4px,rgb(255,255,255) 4px, rgb(255,255,255) 7px,rgb(255,255,255) 7px, rgb(255,255,255) 12px,rgb(255,255,255) 12px, rgb(255,255,255) 13px); background-size: 52px 52px;
+}
+.itemsBox{
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.599);
+    border-radius:   9% / 80%  ;
+    padding: 20px ;
+}
+#pic{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.599);
+
+}
+.name{
+    font-size: 100px;
+    font-family: 'Titan One', cursive;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 179, 255);
+}
+.water{
+    position: absolute;
+    font-family: 'Titan One', cursive;
+    font-size: 100px ;
+    top: 20px;
+    color: rgb(0, 179, 255);
+    animation: wave 4s ease-in-out infinite;
+}
+@keyframes wave {
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 58%, 54% 60%, 70% 61%, 80% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 70%, 16% 67%, 34% 66%, 51% 62%, 67% 58%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
